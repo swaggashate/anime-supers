@@ -27,6 +27,13 @@ hamburger.addEventListener('click', () => {
 navMenu.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
         navMenu.classList.remove('active');
+
+// Close menu when clicking outside of it
+document.addEventListener('click', (e) => {
+    const isClickInsideMenu = navMenu.contains(e.target);
+    const isClickOnHamburger = hamburger.contains(e.target);
+    
+    if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
     }
 });
-

@@ -27,6 +27,8 @@ hamburger.addEventListener('click', () => {
 navMenu.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
         navMenu.classList.remove('active');
+    }
+});
 
 // Close menu when clicking outside of it
 document.addEventListener('click', (e) => {
@@ -37,3 +39,4 @@ document.addEventListener('click', (e) => {
         navMenu.classList.remove('active');
     }
 });
+

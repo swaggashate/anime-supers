@@ -3,8 +3,8 @@ const navMenu = document.getElementById('nav-menu');
 const logo = document.getElementById('logo');
 
 // Logo blinking animation
-const logoNormal = './assets/weblogo.png';
-const logoBlinking = './assets/weblogoblink.png';
+const logoNormal = './weblogo.png';
+const logoBlinking = './weblogoblink.png';
 let isNormalLogo = true;
 
 function swapLogo() {
@@ -29,3 +29,4 @@ navMenu.addEventListener('click', (e) => {
         navMenu.classList.remove('active');
     }
 });
+
